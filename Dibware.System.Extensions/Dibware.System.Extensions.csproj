@@ -7,8 +7,8 @@
     <ProjectGuid>{6C5D152B-9C93-4D48-B074-CD53A32FBFE6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Dibware.Extensions</RootNamespace>
-    <AssemblyName>Dibware.Extensions</AssemblyName>
+    <RootNamespace>Dibware.System.Extensions</RootNamespace>
+    <AssemblyName>Dibware.System.Extensions</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,7 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\String.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
