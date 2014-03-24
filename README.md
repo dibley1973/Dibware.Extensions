@@ -19,8 +19,8 @@ A C# .Net 4.5 assembly of extensions
 * Example 20140321-0525-DWDT WebPrinciple and WebIdentity added
 
 ## Standards
-Follow Microsoft c# standards
-Suggested to use Resharper and follow suggestions where appropriate
+* Follow Microsoft C# general standards. 
+* Suggest use Resharper tools and follow suggestions where appropriate.
 
 ### Code Blocks
 * All code blocks must be wrapped in braces, even if just one line
@@ -32,7 +32,7 @@ Suggested to use Resharper and follow suggestions where appropriate
 
 ### Referenced DLLs
 * Do not use packages from Nuget in the project or solution- I feel these make the solution messy
-* Add referenced .dlls to the Library directory in each project and reference from there
+* Add referenced .dlls to a "Library" directory in each project and reference from there
 * Remove unused references where known
 * Remove unused "usings" from classes and modules
 

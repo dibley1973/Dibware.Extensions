@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GitInfo", "GitInfo", "{DD9F8057-F72B-45AA-9096-811B8D2E2E6E}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dibware.System.Extensions", "Dibware.System.Extensions\Dibware.System.Extensions.csproj", "{6C5D152B-9C93-4D48-B074-CD53A32FBFE6}"
 EndProject

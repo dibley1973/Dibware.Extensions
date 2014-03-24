@@ -504,7 +504,6 @@ namespace Dibware.System.Extensions.Tests
 
         #endregion
 
-
         #region IsNumericCsv
 
         [TestMethod]

@@ -19,7 +19,7 @@ namespace Dibware.System.Extensions
         }
 
         /// <summary>
-        /// Determines whether this instance of a <see cref="string" /> is a <see cref="DateTime" />.
+        /// Determines whether this instance of a <see cref="String" /> is a <see cref="DateTime" />.
         /// </summary>
         /// <param name="value">This instance</param>
         /// <returns>
@@ -36,7 +36,7 @@ namespace Dibware.System.Extensions
         }
 
         /// <summary>
-        /// Determines whether this instance of a <see cref="string" /> is a 16 bit integer.
+        /// Determines whether this instance of a <see cref="String" /> is a 16 bit integer.
         /// </summary>
         /// <param name="value">This instance</param>
         /// <returns>
@@ -44,7 +44,7 @@ namespace Dibware.System.Extensions
         /// </returns>
         public static Boolean IsInt16(this String value)
         {
-            if (string.IsNullOrEmpty(value))
+            if (String.IsNullOrEmpty(value))
             {
                 return false;
             }
@@ -53,7 +53,7 @@ namespace Dibware.System.Extensions
         }
 
         /// <summary>
-        /// Determines whether this instance of a <see cref="string" /> is a 32 bit integer.
+        /// Determines whether this instance of a <see cref="String" /> is a 32 bit integer.
         /// </summary>
         /// <param name="value">This instance</param>
         /// <returns>
@@ -61,7 +61,7 @@ namespace Dibware.System.Extensions
         /// </returns>
         public static Boolean IsInt32(this String value)
         {
-            if (string.IsNullOrEmpty(value))
+            if (String.IsNullOrEmpty(value))
             {
                 return false;
             }
@@ -70,7 +70,7 @@ namespace Dibware.System.Extensions
         }
 
         /// <summary>
-        /// Determines whether this instance of a <see cref="string" /> is a 64 bit integer.
+        /// Determines whether this instance of a <see cref="String" /> is a 64 bit integer.
         /// </summary>
         /// <param name="value">This instance</param>
         /// <returns>
@@ -78,7 +78,7 @@ namespace Dibware.System.Extensions
         /// </returns>
         public static Boolean IsInt64(this String value)
         {
-            if (string.IsNullOrEmpty(value))
+            if (String.IsNullOrEmpty(value))
             {
                 return false;
             }
@@ -117,15 +117,15 @@ namespace Dibware.System.Extensions
         }
 
         /// <summary>
-        /// Determines whether this instance of a <see cref="string" /> is numeric.
+        /// Determines whether this instance of a <see cref="String" /> is numeric.
         /// </summary>
         /// <param name="value">This instance</param>
         /// <returns>
         /// 	<c>true</c> if the specified s is numeric; otherwise, <c>false</c>.
         /// </returns>
-        public static Boolean IsNumeric(this string value)
+        public static Boolean IsNumeric(this String value)
         {
-            if (string.IsNullOrEmpty(value))
+            if (String.IsNullOrEmpty(value))
             {
                 return false;
             }
@@ -134,7 +134,7 @@ namespace Dibware.System.Extensions
         }
 
         /// <summary>
-        /// Determines whether the specified text is in a valid comma sperated string.
+        /// Determines whether the specified text is in a valid comma sperated String.
         /// </summary>
         /// <param name="value">The value to check.</param>
         /// <returns>
@@ -153,7 +153,7 @@ namespace Dibware.System.Extensions
         /// <returns>
         /// 	<c>true</c> if text is in a valid format; otherwise, <c>false</c>.
         /// </returns>
-        public static Boolean IsValidEmailAddressFormat(this string value)
+        public static Boolean IsValidEmailAddressFormat(this String value)
         {
             // Return true if text is in valid e-mail format.
             // Ref: http://msdn.microsoft.com/en-us/library/01escwtf.aspx
