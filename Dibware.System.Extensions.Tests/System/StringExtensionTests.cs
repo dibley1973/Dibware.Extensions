@@ -69,6 +69,34 @@ namespace Dibware.System.Extensions.Tests
         #region IsDateTime
 
         [TestMethod]
+        public void Test_IsDateTime_ReturnsFalse_ForNullString()
+        {
+            // Arrange
+            const String value = null;
+            const Boolean expectedValue = false;
+
+            // Act
+            var result = value.IsDateTime();
+
+            //Assert
+            Assert.AreEqual(expectedValue, result);
+        }
+
+        [TestMethod]
+        public void Test_IsDateTime_ReturnsFalse_ForemptyString()
+        {
+            // Arrange
+            const String value = "";
+            const Boolean expectedValue = false;
+
+            // Act
+            var result = value.IsDateTime();
+
+            //Assert
+            Assert.AreEqual(expectedValue, result);
+        }
+
+        [TestMethod]
         public void Test_IsDateTime_ReturnsFalse_ForNonDateString()
         {
             // Arrange
@@ -76,9 +104,10 @@ namespace Dibware.System.Extensions.Tests
             const Boolean expectedValue = false;
 
             // Act
+            var result = value.IsDateTime();
 
             //Assert
-            Assert.AreEqual(expectedValue, value.IsDateTime());
+            Assert.AreEqual(expectedValue, result);
         }
 
         [TestMethod]
@@ -89,9 +118,10 @@ namespace Dibware.System.Extensions.Tests
             const Boolean expectedValue = false;
 
             // Act
+            var result = value.IsDateTime();
 
             //Assert
-            Assert.AreEqual(expectedValue, value.IsDateTime());
+            Assert.AreEqual(expectedValue, result);
         }
 
         [TestMethod]
@@ -102,14 +132,43 @@ namespace Dibware.System.Extensions.Tests
             const Boolean expectedValue = true;
 
             // Act
+            var result = value.IsDateTime();
 
             //Assert
-            Assert.AreEqual(expectedValue, value.IsDateTime());
+            Assert.AreEqual(expectedValue, result);
         }
 
         #endregion
 
         #region IsInt16
+
+        [TestMethod]
+        public void Test_IsInt16_ReturnsFalse_ForNullString()
+        {
+            // Arrange
+            const String value = null;
+            const Boolean expectedValue = false;
+
+            // Act
+            var result = value.IsInt16();
+
+            //Assert
+            Assert.AreEqual(expectedValue, result);
+        }
+
+        [TestMethod]
+        public void Test_IsInt16_ReturnsFalse_ForEmptyString()
+        {
+            // Arrange
+            const String value = "";
+            const Boolean expectedValue = false;
+
+            // Act
+            var result = value.IsInt16();
+
+            //Assert
+            Assert.AreEqual(expectedValue, result);
+        }
 
         [TestMethod]
         public void Test_IsInt16_ReturnsFalse_ForNonIntegerValue()
@@ -172,6 +231,34 @@ namespace Dibware.System.Extensions.Tests
         #region IsInt32
 
         [TestMethod]
+        public void Test_IsInt32_ReturnsFalse_ForNullString()
+        {
+            // Arrange
+            const String value = null;
+            const Boolean expectedValue = false;
+
+            // Act
+            var result = value.IsInt32();
+
+            //Assert
+            Assert.AreEqual(expectedValue, result);
+        }
+
+        [TestMethod]
+        public void Test_IsInt32_ReturnsFalse_ForEmptyString()
+        {
+            // Arrange
+            const String value = "";
+            const Boolean expectedValue = false;
+
+            // Act
+            var result = value.IsInt32();
+
+            //Assert
+            Assert.AreEqual(expectedValue, result);
+        }
+
+        [TestMethod]
         public void Test_IsInt32_ReturnsFalse_ForNonIntegerValue()
         {
             // Arrange
@@ -229,7 +316,35 @@ namespace Dibware.System.Extensions.Tests
 
         #endregion
 
-        #region IsInt32
+        #region IsInt64
+
+        [TestMethod]
+        public void Test_IsInt64_ReturnsFalse_ForNullString()
+        {
+            // Arrange
+            const String value = null;
+            const Boolean expectedValue = false;
+
+            // Act
+            var result = value.IsInt64();
+
+            //Assert
+            Assert.AreEqual(expectedValue, result);
+        }
+
+        [TestMethod]
+        public void Test_IsInt64_ReturnsFalse_ForEmptyString()
+        {
+            // Arrange
+            const String value = "";
+            const Boolean expectedValue = false;
+
+            // Act
+            var result = value.IsInt64();
+
+            //Assert
+            Assert.AreEqual(expectedValue, result);
+        }
 
         [TestMethod]
         public void Test_IsInt64_ReturnsFalse_ForNonIntegerValue()
@@ -459,6 +574,34 @@ namespace Dibware.System.Extensions.Tests
         #endregion
 
         #region IsNumeric
+
+        [TestMethod]
+        public void Test_IsNumeric_ReturnsFalse_ForNullString()
+        {
+            // Arrange
+            const String value = null;
+            const Boolean expectedValue = false;
+
+            // Act
+            var result = value.IsNumeric();
+
+            //Assert
+            Assert.AreEqual(expectedValue, result);
+        }
+
+        [TestMethod]
+        public void Test_IsNumeric_ReturnsFalse_ForEmptyString()
+        {
+            // Arrange
+            const String value = "";
+            const Boolean expectedValue = false;
+
+            // Act
+            var result = value.IsNumeric();
+
+            //Assert
+            Assert.AreEqual(expectedValue, result);
+        }
 
         [TestMethod]
         public void Test_IsNumeric_ReturnsFalse_ForNonNumericString()
