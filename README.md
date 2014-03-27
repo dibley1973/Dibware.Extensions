@@ -18,7 +18,7 @@ A C# .Net 4.5 assembly of extensions
 * Boolean IsNumericCsv
 * Boolean IsValidEmailAddress
 
-#### Boolean HasValue
+##### Boolean HasValue
 Returns true if the string has a value, i.e. is not null or empty.
 
 #### Boolean IsDateTime
