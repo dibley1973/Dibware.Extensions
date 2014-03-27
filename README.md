@@ -3,6 +3,53 @@ Dibware.Extensions
 
 A C# .Net 4.5 assembly of extensions
 
+##Classes
+### StringExtensions.cs
+#### Members
+* Boolean HasValue
+* Boolean IsDateTime
+* Boolean IsInt16
+* Boolean IsInt32
+* Boolean IsInt64
+* Boolean IsNullOrEmpty
+* Boolean IsNullOrWhiteSpace
+* Boolean IsNullOrEmptyOrWhiteSpace
+* Boolean IsNumeric
+* Boolean IsNumericCsv
+* Boolean IsValidEmailAddress
+
+##### Boolean HasValue
+Returns true if the string has a value, i.e. is not null or empty.
+
+##### Boolean IsDateTime
+Returns true if the string has a value and the value can be parsed into a DataTime object
+
+##### Boolean IsInt16
+Returns true if the string has a value and the value can be parsed into a Int16 number
+
+##### Boolean IsInt32
+Returns true if the string has a value and the value can be parsed into a Int32 number
+
+##### Boolean IsInt64
+Returns true if the string has a value and the value can be parsed into a Int64 number
+
+##### Boolean IsNullOrEmpty
+Returns true of the string is null or empty
+
+##### Boolean IsNullOrWhiteSpace
+Returns true of the string is null or is filled with white space
+
+##### Boolean IsNullOrEmptyOrWhiteSpace
+Returns true of the string is null, empty or is filled with white space
+
+##### Boolean IsNumeric
+Returns true if the string has a value and the value can be parsed to a double precision floating point number
+
+##### Boolean IsNumericCsv
+Returns true if the string has a value and the value can be parsed to a numeric comma seperated value (CSV) list
+
+
+
 ## Git Commits
 * Name your commits in the following format YYYYMMDD-HHMM-IINN COMMENT
 * Where YYYY    = Year
