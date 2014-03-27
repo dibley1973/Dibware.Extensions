@@ -3,7 +3,9 @@ Dibware.Extensions
 
 A C# .Net 4.5 assembly of extensions
 
-## StringExtensions.cs
+##Classes
+### StringExtensions.cs
+#### Members
 * HasValue
 * IsDateTime
 * IsInt16
