@@ -3,6 +3,20 @@ Dibware.Extensions
 
 A C# .Net 4.5 assembly of extensions
 
+## StringExtensions.cs
+* HasValue
+* IsDateTime
+* IsInt16
+* IsInt32
+* IsInt64
+* IsNullOrEmpty
+* IsNullOrWhiteSpace
+* IsNullOrEmptyOrWhiteSpace
+* IsNumeric
+* IsNumericCsv
+* IsValidEmailAddress
+
+
 ## Git Commits
 * Name your commits in the following format YYYYMMDD-HHMM-IINN COMMENT
 * Where YYYY    = Year
