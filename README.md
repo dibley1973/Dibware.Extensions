@@ -6,17 +6,32 @@ A C# .Net 4.5 assembly of extensions
 ##Classes
 ### StringExtensions.cs
 #### Members
-* HasValue
-* IsDateTime
-* IsInt16
-* IsInt32
-* IsInt64
-* IsNullOrEmpty
-* IsNullOrWhiteSpace
-* IsNullOrEmptyOrWhiteSpace
-* IsNumeric
-* IsNumericCsv
-* IsValidEmailAddress
+* Boolean HasValue
+* Boolean IsDateTime
+* Boolean IsInt16
+* Boolean IsInt32
+* Boolean IsInt64
+* Boolean IsNullOrEmpty
+* Boolean IsNullOrWhiteSpace
+* Boolean IsNullOrEmptyOrWhiteSpace
+* Boolean IsNumeric
+* Boolean IsNumericCsv
+* Boolean IsValidEmailAddress
+
+#### Boolean HasValue
+Returns true if the string has a value, i.e. is not null or empty.
+
+#### Boolean IsDateTime
+Returns true if the string has a value and the value can be parsed into a DataTime object
+
+#### Boolean IsInt16
+Returns true if the string has a value and the value can be parsed into a Int16 number
+
+#### Boolean IsInt32
+Returns true if the string has a value and the value can be parsed into a Int32 number
+
+#### Boolean IsInt64
+Returns true if the string has a value and the value can be parsed into a Int64 number
 
 
 ## Git Commits
