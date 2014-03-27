@@ -142,7 +142,7 @@ namespace Dibware.System.Extensions
         /// </returns>
         public static Boolean IsNumericCsv(this String value)
         {
-            // Return true if text is in valid e-mail format.
+            // Return true if text is in valid CSV format.
             return Regex.IsMatch(value, "^[0-9, ]+$");
         }
 
