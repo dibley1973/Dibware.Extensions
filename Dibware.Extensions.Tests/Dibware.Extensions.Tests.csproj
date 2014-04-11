@@ -55,7 +55,7 @@
     <Compile Include="System\StringExtensionTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Dibware.System.Extensions\Dibware.Extensions.csproj">
+    <ProjectReference Include="..\Dibware.Extensions\Dibware.Extensions.csproj">
       <Project>{6c5d152b-9c93-4d48-b074-cd53a32fbfe6}</Project>
       <Name>Dibware.Extensions</Name>
     </ProjectReference>
