@@ -9,11 +9,11 @@ namespace Dibware.Extensions.System.Collections
     public static class IEnumerableExtensions
     {
         /// <summary>
-        /// 
+        /// Performs the specified action on each element of the IEnumerable<T>.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="source"></param>
-        /// <param name="action"></param>
+        /// <param name="action">The Action<T> delegate to perform on each element of the List<T>.</param>
         public static void ForEach<T>(this IEnumerable<T> source,
             Action<T> action)
         {
