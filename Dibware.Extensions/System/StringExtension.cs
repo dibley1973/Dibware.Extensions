@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 
-namespace Dibware.Extensions
+namespace Dibware.Extensions.System
 {
     /// <summary>
     /// Extend methods for the System.String object
