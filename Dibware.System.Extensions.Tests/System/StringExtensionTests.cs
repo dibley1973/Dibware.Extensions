@@ -2,10 +2,10 @@
 using System;
 using System.Globalization;
 
-namespace Dibware.System.Extensions.Tests
+namespace Dibware.Extensions.Tests
 {
     /// <summary>
-    /// Provides extensions to the string class
+    /// Tests extensions to the String class
     /// </summary>
     [TestClass]
     public class StringExtensionTests

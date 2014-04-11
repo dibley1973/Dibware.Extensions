@@ -4,7 +4,18 @@ Dibware.Extensions
 A C# .Net 4.5 assembly of extensions
 
 ##Classes
-### StringExtensions.cs
+* Dibware.System.Collections.IEnumerableExtensions
+* Dibware.System.StringExtensions
+
+### Dibware.System.Collections.IEnumerableExtensions
+#### Members
+* void ForEach<T>
+
+##### void ForEach<T>
+Allows iterating through an IEnumerable object while performing an action
+
+
+### Dibware.System.StringExtensions
 #### Members
 * Boolean HasValue
 * Boolean IsDateTime

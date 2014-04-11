@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Dibware.System.Extensions.System.Collections.Generic
+namespace Dibware.Extensions.System.Collections
 {
     /// <summary>
     /// Provides extensionn methods to the IEnumerable class
