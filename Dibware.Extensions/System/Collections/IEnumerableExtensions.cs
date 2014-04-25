@@ -9,6 +9,8 @@ namespace Dibware.Extensions.System.Collections
     /// </summary>
     public static class IEnumerableExtensions
     {
+        #region ForEach
+
         /// <summary>
         /// Performs the specified action on each element of the IEnumerable<T>.
         /// </summary>
@@ -23,6 +25,10 @@ namespace Dibware.Extensions.System.Collections
                 action(element);
             }
         }
+
+        #endregion
+
+        #region AppendAll
 
         /// <summary>
         /// Appends all of the Strings in the collection.
@@ -59,5 +65,7 @@ namespace Dibware.Extensions.System.Collections
                 return builder.ToString();
             }
         }
+
+        #endregion
     }
 }

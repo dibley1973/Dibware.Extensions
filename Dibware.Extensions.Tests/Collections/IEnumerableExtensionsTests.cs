@@ -38,5 +38,48 @@ namespace Dibware.Extensions.Tests.Collections
         }
 
         #endregion
+
+        #region AppendAll
+
+        [TestMethod]
+        public void Test_AppendAll_WithNoSeperator_ResultsIn_ConcatenatedStringReturned()
+        {
+            // Arrange
+            const String item1 = "One";
+            const String item2 = "Two";
+            const String item3 = "Three";
+            String expectedResult = String.Concat(item1, item2, item3);
+
+            IEnumerable<String> list =
+                new List<String>() { item1, item2, item3 };
+
+            // Act
+            var result = list.AppendAll();
+
+            // Assert
+            Assert.AreEqual(expectedResult, result);
+        }
+
+        [TestMethod]
+        public void Test_AppendAll_WithCommaSeperator_ResultsIn_CommaSeperatedListReturned()
+        {
+            // Arrange
+            const String item1 = "One";
+            const String item2 = "Two";
+            const String item3 = "Three";
+            const String seperator = ",";
+            String expectedResult = String.Concat(item1, seperator, item2, seperator, item3);
+
+            IEnumerable<String> list =
+                new List<String>() { item1, item2, item3 };
+
+            // Act
+            var result = list.AppendAll(seperator);
+
+            // Assert
+            Assert.AreEqual(expectedResult, result);
+        }
+
+        #endregion
     }
 }

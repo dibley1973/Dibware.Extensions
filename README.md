@@ -10,9 +10,17 @@ A C# .Net 4.5 assembly of extensions
 ### Dibware.System.Collections.IEnumerableExtensions
 #### Members
 * void ForEach<T>
+* String AppendAll()
+* String AppendAll(String)
 
 ##### void ForEach<T>
 Allows iterating through an IEnumerable object while performing an action
+
+##### String AppendAll()
+Appends all of the Strings in the collection.
+
+##### String AppendAll(String)
+Appends all of the Strings in the collection using the specied seperator.
 
 
 ### Dibware.System.StringExtensions
