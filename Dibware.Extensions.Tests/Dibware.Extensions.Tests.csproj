@@ -53,6 +53,7 @@
     <Compile Include="Collections\IEnumerableExtensionsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="System\StringExtensionTests.cs" />
+    <Compile Include="System\Int32ExtensionsTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Dibware.Extensions\Dibware.Extensions.csproj">

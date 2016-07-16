@@ -1,10 +1,9 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Dibware.Extensions.System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Globalization;
-using Dibware.Extensions.System;
 
-
-namespace Dibware.Extensions.Tests
+namespace Dibware.Extensions.Tests.System
 {
     /// <summary>
     /// Tests extensions to the String class
@@ -15,7 +14,7 @@ namespace Dibware.Extensions.Tests
         #region HasValue
 
         [TestMethod]
-        public void Test_HasValue_ReturnsFalse_ForNullString()
+        public void HasValue_ReturnsFalse_ForNullString()
         {
             // Arrange
             const String value = null;
@@ -28,7 +27,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_HasValue_ReturnsFalse_ForEmptyString()
+        public void HasValue_ReturnsFalse_ForEmptyString()
         {
             // Arrange
             const String value = "";
@@ -41,7 +40,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_HasValue_ReturnsTrue_ForFilledString()
+        public void HasValue_ReturnsTrue_ForFilledString()
         {
             // Arrange
             const String value = "SomeValue";
@@ -54,7 +53,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_HasValue_ReturnsTrue_ForWhiteSpace()
+        public void HasValue_ReturnsTrue_ForWhiteSpace()
         {
             // Arrange
             const String value = "  ";
@@ -71,7 +70,7 @@ namespace Dibware.Extensions.Tests
         #region IsDateTime
 
         [TestMethod]
-        public void Test_IsDateTime_ReturnsFalse_ForNullString()
+        public void IsDateTime_ReturnsFalse_ForNullString()
         {
             // Arrange
             const String value = null;
@@ -85,7 +84,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsDateTime_ReturnsFalse_ForemptyString()
+        public void IsDateTime_ReturnsFalse_ForemptyString()
         {
             // Arrange
             const String value = "";
@@ -99,7 +98,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsDateTime_ReturnsFalse_ForNonDateString()
+        public void IsDateTime_ReturnsFalse_ForNonDateString()
         {
             // Arrange
             const String value = "BillyBob";
@@ -113,7 +112,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsDateTime_ReturnsFalse_ForNumericString()
+        public void IsDateTime_ReturnsFalse_ForNumericString()
         {
             // Arrange
             const String value = "123456";
@@ -127,7 +126,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsDateTime_ReturnsTrue_ForDate()
+        public void IsDateTime_ReturnsTrue_ForDate()
         {
             // Arrange
             var value = DateTime.Now.ToShortTimeString();
@@ -145,7 +144,7 @@ namespace Dibware.Extensions.Tests
         #region IsInt16
 
         [TestMethod]
-        public void Test_IsInt16_ReturnsFalse_ForNullString()
+        public void IsInt16_ReturnsFalse_ForNullString()
         {
             // Arrange
             const String value = null;
@@ -159,7 +158,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsInt16_ReturnsFalse_ForEmptyString()
+        public void IsInt16_ReturnsFalse_ForEmptyString()
         {
             // Arrange
             const String value = "";
@@ -173,7 +172,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsInt16_ReturnsFalse_ForNonIntegerValue()
+        public void IsInt16_ReturnsFalse_ForNonIntegerValue()
         {
             // Arrange
             const String value = "Bacon Rind";
@@ -187,7 +186,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsInt16_ReturnsTrue_ForInt16Value()
+        public void IsInt16_ReturnsTrue_ForInt16Value()
         {
             // Arrange
             var value = Int16.MaxValue.ToString(CultureInfo.InvariantCulture);
@@ -201,7 +200,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsInt16_ReturnsFalse_ForInt32Value()
+        public void IsInt16_ReturnsFalse_ForInt32Value()
         {
             // Arrange
             var value = Int32.MaxValue.ToString(CultureInfo.InvariantCulture);
@@ -215,7 +214,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsInt16_ReturnsFalse_ForInt64Value()
+        public void IsInt16_ReturnsFalse_ForInt64Value()
         {
             // Arrange
             var value = Int64.MaxValue.ToString(CultureInfo.InvariantCulture);
@@ -233,7 +232,7 @@ namespace Dibware.Extensions.Tests
         #region IsInt32
 
         [TestMethod]
-        public void Test_IsInt32_ReturnsFalse_ForNullString()
+        public void IsInt32_ReturnsFalse_ForNullString()
         {
             // Arrange
             const String value = null;
@@ -247,7 +246,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsInt32_ReturnsFalse_ForEmptyString()
+        public void IsInt32_ReturnsFalse_ForEmptyString()
         {
             // Arrange
             const String value = "";
@@ -261,7 +260,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsInt32_ReturnsFalse_ForNonIntegerValue()
+        public void IsInt32_ReturnsFalse_ForNonIntegerValue()
         {
             // Arrange
             const String value = "Bacon Rind";
@@ -275,7 +274,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsInt32_ReturnsTrue_ForInt16Value()
+        public void IsInt32_ReturnsTrue_ForInt16Value()
         {
             // Arrange
             var value = Int16.MaxValue.ToString(CultureInfo.InvariantCulture);
@@ -289,7 +288,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsInt32_ReturnsTrue_ForInt32Value()
+        public void IsInt32_ReturnsTrue_ForInt32Value()
         {
             // Arrange
             var value = Int32.MaxValue.ToString(CultureInfo.InvariantCulture);
@@ -303,7 +302,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsInt32_ReturnsFalse_ForInt64Value()
+        public void IsInt32_ReturnsFalse_ForInt64Value()
         {
             // Arrange
             var value = Int64.MaxValue.ToString(CultureInfo.InvariantCulture);
@@ -321,7 +320,7 @@ namespace Dibware.Extensions.Tests
         #region IsInt64
 
         [TestMethod]
-        public void Test_IsInt64_ReturnsFalse_ForNullString()
+        public void IsInt64_ReturnsFalse_ForNullString()
         {
             // Arrange
             const String value = null;
@@ -335,7 +334,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsInt64_ReturnsFalse_ForEmptyString()
+        public void IsInt64_ReturnsFalse_ForEmptyString()
         {
             // Arrange
             const String value = "";
@@ -349,7 +348,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsInt64_ReturnsFalse_ForNonIntegerValue()
+        public void IsInt64_ReturnsFalse_ForNonIntegerValue()
         {
             // Arrange
             const String value = "Bacon Rind";
@@ -363,7 +362,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsInt64ReturnsTrue_ForInt16Value()
+        public void IsInt64ReturnsTrue_ForInt16Value()
         {
             // Arrange
             var value = Int16.MaxValue.ToString(CultureInfo.InvariantCulture);
@@ -377,7 +376,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsInt64_ReturnsTrue_ForInt32Value()
+        public void IsInt64_ReturnsTrue_ForInt32Value()
         {
             // Arrange
             var value = Int32.MaxValue.ToString(CultureInfo.InvariantCulture);
@@ -391,7 +390,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsInt64_ReturnsTrue_ForInt64Value()
+        public void IsInt64_ReturnsTrue_ForInt64Value()
         {
             // Arrange
             var value = Int64.MaxValue.ToString(CultureInfo.InvariantCulture);
@@ -409,7 +408,7 @@ namespace Dibware.Extensions.Tests
         #region IsNullOrEmpty
 
         [TestMethod]
-        public void Test_IsNullOrEmpty_ReturnsTrue_ForNullString()
+        public void IsNullOrEmpty_ReturnsTrue_ForNullString()
         {
             // Arrange
             const String value = null;
@@ -422,7 +421,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsNullOrEmpty_ReturnsTrue_ForEmptyString()
+        public void IsNullOrEmpty_ReturnsTrue_ForEmptyString()
         {
             // Arrange
             const String value = "";
@@ -435,7 +434,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsNullOrEmpty_ReturnsFalse_ForFilledString()
+        public void IsNullOrEmpty_ReturnsFalse_ForFilledString()
         {
             // Arrange
             const String value = "SomeValue";
@@ -448,7 +447,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsNullOrEmpty_ReturnsFalse_ForWhiteSpace()
+        public void IsNullOrEmpty_ReturnsFalse_ForWhiteSpace()
         {
             // Arrange
             const String value = "   ";
@@ -465,7 +464,7 @@ namespace Dibware.Extensions.Tests
         #region IsNullOrWhiteSpace
 
         [TestMethod]
-        public void Test_IsNullOrWhiteSpace_ReturnsTrue_ForNullString()
+        public void IsNullOrWhiteSpace_ReturnsTrue_ForNullString()
         {
             // Arrange
             const String value = null;
@@ -478,7 +477,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsNullOrWhiteSpace_ReturnsTrue_ForEmptyString()
+        public void IsNullOrWhiteSpace_ReturnsTrue_ForEmptyString()
         {
             // Arrange
             const String value = "";
@@ -491,7 +490,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsNullOrWhiteSpace_ReturnsFalse_ForFilledString()
+        public void IsNullOrWhiteSpace_ReturnsFalse_ForFilledString()
         {
             // Arrange
             const String value = "SomeValue";
@@ -504,7 +503,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsNullOrWhiteSpace_ReturnsFalse_ForWhiteSpace()
+        public void IsNullOrWhiteSpace_ReturnsFalse_ForWhiteSpace()
         {
             // Arrange
             const String value = "    ";
@@ -521,7 +520,7 @@ namespace Dibware.Extensions.Tests
         #region IsNullOrEmptyOrWhiteSpace
 
         [TestMethod]
-        public void Test_IsNullOrEmptyOrWhiteSpace_ReturnsTrue_ForNullString()
+        public void IsNullOrEmptyOrWhiteSpace_ReturnsTrue_ForNullString()
         {
             // Arrange
             const String value = null;
@@ -535,7 +534,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsNullOrEmptyOrWhiteSpace_ReturnsTrue_ForEmptyString()
+        public void IsNullOrEmptyOrWhiteSpace_ReturnsTrue_ForEmptyString()
         {
             // Arrange
             const String value = "";
@@ -548,7 +547,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsNullOrEmptyOrWhiteSpace_ReturnsFalse_ForFilledString()
+        public void IsNullOrEmptyOrWhiteSpace_ReturnsFalse_ForFilledString()
         {
             // Arrange
             const String value = "SomeValue";
@@ -561,7 +560,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsNullOrEmptyOrWhiteSpace_ReturnsFalse_ForWhiteSpace()
+        public void IsNullOrEmptyOrWhiteSpace_ReturnsFalse_ForWhiteSpace()
         {
             // Arrange
             const String value = "    ";
@@ -578,7 +577,7 @@ namespace Dibware.Extensions.Tests
         #region IsNumeric
 
         [TestMethod]
-        public void Test_IsNumeric_ReturnsFalse_ForNullString()
+        public void IsNumeric_ReturnsFalse_ForNullString()
         {
             // Arrange
             const String value = null;
@@ -592,7 +591,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsNumeric_ReturnsFalse_ForEmptyString()
+        public void IsNumeric_ReturnsFalse_ForEmptyString()
         {
             // Arrange
             const String value = "";
@@ -606,7 +605,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsNumeric_ReturnsFalse_ForNonNumericString()
+        public void IsNumeric_ReturnsFalse_ForNonNumericString()
         {
             // Arrange
             const String value = "BollyBob";
@@ -620,7 +619,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsNumeric_ReturnsTrue_ForNumeric()
+        public void IsNumeric_ReturnsTrue_ForNumeric()
         {
             // Arrange
             const String value = "1.05";
@@ -634,7 +633,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsNumeric_ReturnsTrue_ForNegativeNumeric()
+        public void IsNumeric_ReturnsTrue_ForNegativeNumeric()
         {
             // Arrange
             const String value = "-1.05";
@@ -652,7 +651,7 @@ namespace Dibware.Extensions.Tests
         #region IsNumericCsv
 
         [TestMethod]
-        public void Test_IsNumericCsv_ReturnsFalse_ForNonCsvString()
+        public void IsNumericCsv_ReturnsFalse_ForNonCsvString()
         {
             // Arrange
             const String value = "BollyBob";
@@ -666,7 +665,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsNumericCsv_ReturnsFalse_ForNonNumericCsv()
+        public void IsNumericCsv_ReturnsFalse_ForNonNumericCsv()
         {
             // Arrange
             const String value = "Dog,Cat,Banana";
@@ -680,7 +679,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsNumericCsv_ReturnsTrue_ForNumericCsv()
+        public void IsNumericCsv_ReturnsTrue_ForNumericCsv()
         {
             // Arrange
             const String value = "1,2,3,77,919";
@@ -694,7 +693,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsNumericCsv_ReturnsTrue_ForNumericCsvWithSpaces()
+        public void IsNumericCsv_ReturnsTrue_ForNumericCsvWithSpaces()
         {
             // Arrange
             const String value = "1, 2, 3, 77, 919";
@@ -712,7 +711,7 @@ namespace Dibware.Extensions.Tests
         #region IsValidEmailAddressFormat
 
         [TestMethod]
-        public void Test_IsValidEmailAddressFormat_ReturnsFalse_ForNonValidEmailAddressFormat()
+        public void IsValidEmailAddressFormat_ReturnsFalse_ForNonValidEmailAddressFormat()
         {
             // Arrange
             const String value = "Billy bob eats locusts";
@@ -726,7 +725,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsValidEmailAddressFormat_ReturnsTrue_ForDotComEmailAddress()
+        public void IsValidEmailAddressFormat_ReturnsTrue_ForDotComEmailAddress()
         {
             // Arrange
             const String value = "anyone@emailhost.com";
@@ -740,7 +739,7 @@ namespace Dibware.Extensions.Tests
         }
 
         [TestMethod]
-        public void Test_IsValidEmailAddressFormat_ReturnsTrue_ForDotCoDotUkEmailAddress()
+        public void IsValidEmailAddressFormat_ReturnsTrue_ForDotCoDotUkEmailAddress()
         {
             // Arrange
             const String value = "anyone@emailhost.co.uk";

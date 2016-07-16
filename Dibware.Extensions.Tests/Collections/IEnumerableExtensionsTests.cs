@@ -15,7 +15,7 @@ namespace Dibware.Extensions.Tests.Collections
         #region ForEach
 
         [TestMethod]
-        public void Test_ForEach_PerformActionOnListUsingForEach_ResultsIn_TheActionBeingPerformed()
+        public void ForEach_PerformActionOnListUsingForEach_ResultsIn_TheActionBeingPerformed()
         {
             // Arrange
             IEnumerable<String> list =
@@ -42,7 +42,7 @@ namespace Dibware.Extensions.Tests.Collections
         #region AppendAll
 
         [TestMethod]
-        public void Test_AppendAll_WithNoSeperator_ResultsIn_ConcatenatedStringReturned()
+        public void AppendAll_WithNoSeperator_ResultsIn_ConcatenatedStringReturned()
         {
             // Arrange
             const String item1 = "One";
@@ -61,7 +61,7 @@ namespace Dibware.Extensions.Tests.Collections
         }
 
         [TestMethod]
-        public void Test_AppendAll_WithCommaSeperator_ResultsIn_CommaSeperatedListReturned()
+        public void AppendAll_WithCommaSeperator_ResultsIn_CommaSeperatedListReturned()
         {
             // Arrange
             const String item1 = "One";

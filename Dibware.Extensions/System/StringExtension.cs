@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 namespace Dibware.Extensions.System
 {
     /// <summary>
-    /// Extend methods for the System.String object
+    /// Extension methods for the System.String object
     /// </summary>
     public static class StringExtensions
     {
