@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GitInfo", "GitInfo", "{DD9F8057-F72B-45AA-9096-811B8D2E2E6E}"
 	ProjectSection(SolutionItems) = preProject
@@ -11,6 +11,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dibware.Extensions", "Dibware.Extensions\Dibware.Extensions.csproj", "{6C5D152B-9C93-4D48-B074-CD53A32FBFE6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dibware.Extensions.Tests", "Dibware.Extensions.Tests\Dibware.Extensions.Tests.csproj", "{C9F271CB-30D1-4DB3-9665-A97D0620644B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NugetPackage", "NugetPackage", "{7D372A98-2222-4471-AE11-69E76D47A7F4}"
+	ProjectSection(SolutionItems) = preProject
+		NugetPackage\Dibware.Extensions.1.0.1.nupkg = NugetPackage\Dibware.Extensions.1.0.1.nupkg
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

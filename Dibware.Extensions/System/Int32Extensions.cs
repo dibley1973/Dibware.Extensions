@@ -17,7 +17,7 @@ namespace Dibware.Extensions.System
         /// If value is less than min, then min will be returned.
         /// If value is between both min and max then value will be returned.
         /// </returns>
-        public static float Clamp(this int value, int min, int max)
+        public static int Clamp(this int value, int min, int max)
         {
             if (value > max) return max;
             if (value < min) return min;

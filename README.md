@@ -7,7 +7,7 @@ A C# .Net 4.5 assembly of extensions
 * Dibware.System.Collections.IEnumerableExtensions
 * Dibware.System.StringExtensions
 
-### Dibware.System.Collections.IEnumerableExtensions
+### Dibware.Extensions.System.Collections.IEnumerableExtensions
 #### Members
 * void ForEach<T>
 * String AppendAll()
@@ -103,8 +103,8 @@ Clamps the specified value between specified min and max values.
 * Keep comments up to date with changes
 
 ### Referenced DLLs
-* Do not use packages from Nuget in the project or solution- I feel these make the solution messy
-* Add referenced .dlls to a "Library" directory in each project and reference from there
+* Feel free to add packages from NuGet in the project or solution
+* Add non NuGet referenced .dlls to a "Library" directory in each project and reference from there
 * Remove unused references where known
 * Remove unused "usings" from classes and modules
 

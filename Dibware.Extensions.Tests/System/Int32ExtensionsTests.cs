@@ -12,6 +12,20 @@ namespace Dibware.Extensions.Tests.System
         #region Clamp
 
         [TestMethod]
+        public void Clamp_ReturnsIntegerDataType_WhenCalled()
+        {
+            const int min = 5;
+            const int value = 10;
+            const int max = 20;
+
+            // ACT
+            var actual = value.Clamp(min, max);
+
+            // ASSERT
+            Assert.IsInstanceOfType(actual, typeof(int));
+        }
+
+        [TestMethod]
         public void Clamp_ReturnsMax_WhenGivenValueGreaterThanMax()
         {
             // ARRANGE
