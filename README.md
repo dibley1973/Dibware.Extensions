@@ -23,7 +23,7 @@ Appends all of the Strings in the collection.
 Appends all of the Strings in the collection using the specied seperator.
 
 
-### Dibware.System.StringExtensions
+### Dibware.Extensions.System.StringExtensions
 #### Members
 * Boolean HasValue
 * Boolean IsDateTime
@@ -67,6 +67,12 @@ Returns true if the string has a value and the value can be parsed to a double p
 ##### Boolean IsNumericCsv
 Returns true if the string has a value and the value can be parsed to a numeric comma seperated value (CSV) list
 
+### Dibware.Extensions.System.Int32Extensions
+#### Members
+* int Clamp
+
+##### int Clamp
+Clamps the specified value between specified min and max values.
 
 
 ## Git Commits

@@ -7,7 +7,7 @@ namespace Dibware.Extensions.System
     public static class Int32Extensions
     {
         /// <summary>
-        /// Clamps the specified value.
+        /// Clamps the specified value between specified min and max values.
         /// </summary>
         /// <param name="value">The instance of the value to clamp.</param>
         /// <param name="min">The minimum value. If value is less than min, min will be returned.</param>
